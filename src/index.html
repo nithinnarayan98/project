@@ -6,8 +6,57 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" property="" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+
+
+
 </head>
 <body>
   <app-root></app-root>
+  
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script defer src="assets/js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+        </script>
+        <script src="assets/js/jquery.waypoints.min.js"></script>
+        <script src="assets/js/jquery.countup.js"></script>
+          <script>
+            $('.counter').countUp();
+          </script>
+          <script src="assets/js/jarallax.js"></script>
+          <script src="assets/js/SmoothScroll.min.js"></script>
+          <script type="text/javascript">
+            /* init Jarallax */
+            $('.jarallax').jarallax({
+              speed: 0.5,
+              imgWidth: 1366,
+              imgHeight: 768
+            })
+          </script>
+          <script src="assets/js/bootstrap.js"></script>
+  
 </body>
 </html>
