@@ -1,49 +1,65 @@
-<p>signup works!</p>
-<div id="reg">
-    <div class="container">
-            <div class="row">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                       <form action="/user/reg" method="POST">
-                        <p style="font-size: 30px; text-align: center" id="r">Register</p>
-                        <table class="table" style="width: 600px; margin:auto; border: 2px solid black; border-collapse: collapse;">
-                            <tr>
-                                <td>Name :</td>
-                                <td><input type="text" class="form-control" name="nr" placeholder="Enter Name" required></td>
-                            </tr>
-                            <tr>
-                                <td>Username :</td>
-                                <td><input type="text" class="form-control" name="unr" placeholder="Enter Username" required></td>
-                            </tr>
+<div class="container">
+    <div class="row">
+      
+      <div class="col-md-12"> 
         
-                            <tr>
-                                <td>Password :</td>
-                                <td><input type="password" class="form-control" name="pwr" placeholder="Enter Password" required></td>
-                            </tr>
-
-                            <tr>
-                                <td>Mobile :</td>
-                                <td><input type="text" class="form-control" name="mr" pattern="[6789][0-9]{9}" placeholder="Enter Mobile" required></td>
-                            </tr>
-                            
-                            <tr>
-                                <td>Email :</td>
-                                <td><input type="email" class="form-control" name="er" placeholder="Enter Email" required></td>
-                            </tr>
-                            <tr>
-                                <td>Role :</td>
-                                <td><select  name="role" class="form-control">
-                                    <option>admin</option>
-                                    <option>user</option>
-                                </select>
-                            </td>
-                            </tr>
-                            <tr style="text-align: right">                        
-                                <td><button  class="btn" type="submit" id="rgbtn" style="width: 150px; color: #222; background: #63a792;">Sign Up</button></td>
-                                <td> <a href="">login already a user</a></td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-            </div>
+        <div class="panel">
+          <div class="panel-body">
+              <div id="login">
+                  <div class="container">
+                          <div class="row">
+                              <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                     
+                                      <p style="font-size: 30px; text-align: center" id="log">Sign Up</p>
+                                    
+                                      <table class="table" style="width: 600px; margin:auto; border: 2px solid black; border-collapse: collapse;">
+                                        <tr>
+                                            <td>Name :</td>
+                                            <td><input type="text" class="form-control" name="nr" [(ngModel)]="user.name" placeholder="Enter Name" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Username :</td>
+                                            <td><input type="text" class="form-control" name="unr" [(ngModel)]="user.username"placeholder="Enter Username" required></td>
+                                        </tr>
+                    
+                                        <tr>
+                                            <td>Password :</td>
+                                            <td><input type="password" class="form-control" name="pwr"[(ngModel)]="user.password" placeholder="Enter Password" required></td>
+                                        </tr>
+    
+                                        <tr>
+                                            <td>Mobile :</td>
+                                            <td><input type="text" class="form-control" name="mr" [(ngModel)]="user.mobile"pattern="[6789][0-9]{9}" placeholder="Enter Mobile" required></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>Email :</td>
+                                            <td><input type="email" class="form-control" name="er" [(ngModel)]="user.email"placeholder="Enter Email" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Role :</td>
+                                            <td><select  name="role" [(ngModel)]="user.role"class="form-control">
+                                                <option>admin</option>
+                                                <option>user</option>
+                                            </select>
+                                        </td>
+                                        </tr>
+                                        <tr style="text-align: right">                        
+                                            <td><button class="btn btn-success" type="submit" (click)="signUp()"id="rgbtn" style="width: 150px">Sign Up</button></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                  
+  
+                              </div>
+                          </div>
+                      </div>
+          </div>
+          </div>
         </div>
-</div>
+                                                                                         
+                                                      
+                                                        
+         </div><!--/col-12-->
+    </div>
+  </div>

@@ -4,6 +4,7 @@ import {RouterModule,Routes} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 
+import {MsgserviceService} from './msgservice.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -35,7 +36,7 @@ const approutes:Routes=[{path:"",component:HomeComponent},{path:"login",componen
     AppRoutingModule,FormsModule,
     RouterModule.forRoot(approutes)
   ],
-  providers: [],
+  providers: [MsgserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
